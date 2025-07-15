@@ -14,43 +14,92 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 1rem;
+    background: linear-gradient(45deg, green, transparent);
 }
 
 /* Layout Containers */
-section, header, footer {
+section, footer {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: auto;
 }
 
-/* Navigation */
-nav {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        list-style: none;
+/* Header */
+.header-content {
+    position: sticky;
+    top: 0;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #myLinks {
+        display: none;
     }
 
+    /* Style navigation menu links */
     a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 17px;
+        display: block;
+
+        /* Style the hamburger menu */
+        &.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Navigation */
+nav {
+    /* ul { */
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 1rem;
+        /* list-style: none; */
+    /* } */
+
+    /* a {
         text-decoration: none;
         color: #333;
         font-weight: bold;
-    }
+    } */
 }
 
 /* Hero Section */
-#hero {
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
 .hero-image {
     max-width: 100%;
     height: auto;
     margin-top: 1rem;
+    border-radius: 50%;
+}
+
+.hero-cta-buttons {
+    display: flex;
+    justify-content: center;    
 }
 
 .cta-button {
@@ -94,57 +143,6 @@ nav {
     gap: 2rem;
 }
 
-/* .skills {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    .row {
-        position: relative;
-        width: fit-content;
-        padding: 1rem;
-        background-color: #f0f0f0;
-        margin: 1rem;
-        border: 1px solid #ccc;
-        
-
-        .skill {
-            margin: 1rem;
-            padding: 1rem;
-            color: white;
-            background-color: #1a1a1a;
-        }
-    }
-}
-
-.row-r {
-    animation: moveRight 10s linear infinite;
-}
-
-.row-l {
-    animation: moveLeft 10s linear infinite;
-} */
-
-/* @keyframes moveRight {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: 100%;
-    }
-}
-
-@keyframes moveLeft {
-    0% {
-        right: 0;
-    }
-    100% {
-        right: 100%;
-    }
-} */
-
 
 
 .marquee-wrapper { 
@@ -152,18 +150,15 @@ nav {
     overflow: hidden;
     position: relative;
     background: #f9f9f9;
-    height: 100px;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .marquee-content {
     display: flex;
     white-space: nowrap;    
-
-    &:hover {
-        animation-play-state: paused;
-    }
 }
 
 .skills {
@@ -175,11 +170,11 @@ nav {
 }
 
 .scroll-left {
-    animation: scrollLoop 10s linear infinite;
+    animation: scrollLoop 20s linear infinite;
 }
 
 .scroll-right {
-    animation: scrollLoopRight 10s linear infinite;
+    animation: scrollLoopRight 20s linear infinite;
 }
 
 .marquee-content span {
@@ -200,10 +195,10 @@ nav {
 
 @keyframes scrollLoopRight {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(50%);
+        transform: translateX(0%);
     }
 }
 
@@ -287,14 +282,6 @@ footer {
     }
 }
 
-/* .skills .row {
-    display: flex;
-    
-    .skill {
-        margin: 1rem;
-    }
-} */
-
 /* Media Queries */
 @media (min-width: 768px) {
     .about,
@@ -305,5 +292,10 @@ footer {
 
     nav ul {
         justify-content: flex-end;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
