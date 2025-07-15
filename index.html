@@ -3,54 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>cool cool cool</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="css/heading.css">
+        <link rel="shortcut icon" href="assets/favicon/favicon2.ico" type="image/x-icon">
+        <!-- <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon"> -->
     </head>
-    <body>
-        <!-- <header class="header-content"> 
-            <a href="#">
-                <p>Justin Cantley</p>
-                <p>Web Developer</p>                
-            </a>
-            <nav>
-                <a href="javascript:void(0)">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div id="header-menu-links">
-                    <a href="#about-snippet">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact-cta">Contact</a> 
-                </div>                               
-            </nav>            
-        </header> -->
-        <header class="header-content">
-            <a href="#home" class="active">
-                Logo 
-            </a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="#about-snippet">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact-cta">Contact</a> 
+    <body id="body">
+        <!--Heading section-->
+        <div id="page-heading">
+            <div id="page-heading-navbar">
+                <a href="#">
+                    <img id="page-heading-logo" src="assets/logo.png" alt="the words cool cool cool stacked on each other"> 
+                </a>     
+                <button id="hamburger-menu" onclick="toggleMenu()" alt="hamburger menu">
+                    <span id="hamburger-menu"></span>
+                    <span id="hamburger-menu"></span>
+                    <span id="hamburger-menu"></span>
+                    <span id="hamburger-menu"></span>
+                </button>         
             </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-        </header>
+            <div id="page-heading-links">
+                <!-- <a href="#about-snippet">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-cta">Contact</a>  -->
+                <nav aria-labelledby="nav-title-social">
+                    <ul>
+                        <li>
+                            <a id="about-nav-item" href="#about-snippet">About</a>
+                        </li>
+                        <li>
+                            <a id="projects-nav-item" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a id="contact-nav-item" href="#contact-cta">Contact</a> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--Hero Section-->
         <section class="hero" id="hero">
             <div>
+                <img src="assets/images/hero.jpg" alt="picture of Justin holding a delicious treat at a wedding rehearsal" class="hero-image">
                 <p>Justin Cantley</p>
                 <p>Frontend Developer crafting clean and intuitive web experiences</p>
-                <img src="assets/images/hero-image.png" alt="picture of Justin" class="hero-image">
                 <div class="hero-cta-buttons">
                     <a href="#projects" class="cta-button">View my work</a>
                     <a href="#contact-cta" class="cta-button">Get in Touch</a>
                 </div>
             </div>            
-            <div class="marquee-wrapper">
+            <div class="marquee-wrapper hidden">
                 <div class="marquee-content scroll-left">
                     <span class="skills">
                         <p>Javascript</p>
@@ -251,6 +255,8 @@
                 </div>
             </div>
         </section>
+
+        <!--About Section-->
         <section id="about-snippet" class="about">
             <h2>About</h2>
             <p>I get a kick out of figuring out how things work and finding ways to make them cleaner, faster, or just more enjoyable to use.  I'm a frontend developer who loves that sweet spot where logic meets creativity - where a little CSS magic or a thoughtful interaction can totally change how someone experiences the web.  For me, learning is the fun part, and building is the reward.</p>         
@@ -276,30 +282,34 @@
 
             <a href="about.html">Get to know more about me</a>
         </section>
+
+        <!--Projects Section-->
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="projects-container">
                 <div>
                     <h3>Project 1</h3>
-                    <img src="assets/project1.jpg" alt="Screenshot of Project 1" class="project-image">
+                    <!-- <img src="assets/project1.jpg" alt="Screenshot of Project 1" class="project-image"> -->
                     <p>Description of project 1</p>
                     <a href="#">Link to Project 1</a>
                 </div>
                 <div>
                     <h3>Project 2</h3>
-                    <img src="assets/project2.jpg" alt="Screenshot of Project 2" class="project-image">
+                    <!-- <img src="assets/project2.jpg" alt="Screenshot of Project 2" class="project-image"> -->
                     <p>Description of project 2</p>
                     <a href="#">Link to Project 2</a>
                 </div>
                 <div>
                     <h3>Project 3</h3>
-                    <img src="assets/project3.jpg" alt="Screenshot of Project 3" class="project-image">
+                    <!-- <img src="assets/project3.jpg" alt="Screenshot of Project 3" class="project-image"> -->
                     <p>Description of project 3</p>
                     <a href="#">Link to Project 3</a>
                 </div>
             </div>            
             <a href="projects.html">View all of my projects</a>
         </section>
+
+        <!--Contact Section-->
         <section id="contact-cta" class="contact">
             <h2>Contact</h2>
             <p>Want to collaborate or just say hi? <a href="contact.html">Get in touch!</a></p>
@@ -307,6 +317,8 @@
                 <img src="assets/icons/email.svg" alt="Email icon" class="email-icon">
             </a>
         </section>
+
+        <!--Footer section-->
         <footer>
             <div class="footer-container">
                 <p>©2025 Justin Cantley. All rights reserved.</p>
@@ -341,7 +353,7 @@
                     <span class="back-to-top-arrow">&#8593;</span> Back to top
                 </a>
             </div>
-            <script src="https://kit.fontawesome.com/8e07e4d016.js" crossorigin="anonymous"></script>
+            <!-- <script src="https://kit.fontawesome.com/8e07e4d016.js" crossorigin="anonymous"></script> -->
             <script src="script.js"></script>
         </footer>
     </body>
