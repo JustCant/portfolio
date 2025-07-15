@@ -13,7 +13,16 @@ function toggleMenu() {
 
 document.addEventListener('click', (e) => {
   const targetId = e.target.id;
-  const idsToIgnore = ['hamburger-menu', 'about-nav-item', 'projects-nav-item', 'contact-nav-item'];
+  const idsToIgnore = [
+    'hamburger-menu', 
+    'about-nav-item', 
+    'projects-nav-item', 
+    'contact-nav-item',
+    'hamburger-menu-span-1',
+    'hamburger-menu-span-2',
+    'hamburger-menu-span-3',
+    'hamburger-menu-span-4'
+  ];
   const ignoreId = idsToIgnore.some(id => id === targetId);
 
   if (ignoreId) {
