@@ -10,20 +10,20 @@
     </head>
     <body id="body">
         <!--Heading section-->
-        <div id="page-heading">
-            <div id="page-heading-navbar">
+        <div id="page-heading-container">
+            <div id="page-heading">
                 <a href="#">
                     <img id="page-heading-logo" src="assets/logo.png" alt="the words cool cool cool stacked on each other"> 
                 </a>     
-                <button id="hamburger-menu" onclick="toggleMenu()" alt="hamburger menu">
-                    <span id="hamburger-menu-span-1"></span>
-                    <span id="hamburger-menu-span-2"></span>
-                    <span id="hamburger-menu-span-3"></span>
-                    <span id="hamburger-menu-span-4"></span>
+                <button id="page-heading-menu-btn" onclick="toggleMenu()" alt="hamburger menu">
+                    <span id="page-heading-menu-btn-span-1"></span>
+                    <span id="page-heading-menu-btn-span-2"></span>
+                    <span id="page-heading-menu-btn-span-3"></span>
+                    <span id="page-heading-menu-btn-span-4"></span>
                 </button>         
             </div>
             <div id="page-heading-links">
-                <nav aria-labelledby="nav-title-social">
+                <nav>
                     <ul>
                         <li>
                             <a id="about-nav-item" href="#about-snippet">About</a>
@@ -42,9 +42,15 @@
         <!--Hero Section-->
         <section class="hero" id="hero">
             <div>
-                <img src="assets/images/hero.jpg" alt="picture of Justin holding a delicious treat at a wedding rehearsal" class="hero-image">
-                <p>Justin Cantley</p>
-                <p>Frontend Developer crafting clean and intuitive web experiences</p>
+                <header>
+                    <h1 id="name">Justin Cantley</h1>
+                    <p>Frontend Developer</p>
+                </header>
+                <div class="hero-image-container">
+                    <img src="assets/images/hero.jpg" alt="picture of Justin holding a delicious treat at a wedding rehearsal" class="hero-image">
+                </div>
+                <!-- <p>Justin Cantley</p>
+                <p>Frontend Developer crafting clean and intuitive web experiences</p> -->
                 <div class="hero-cta-buttons">
                     <a href="#projects" class="cta-button">View my work</a>
                     <a href="#contact-cta" class="cta-button">Get in Touch</a>

@@ -14,7 +14,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(45deg, green, transparent);
+    background: linear-gradient(45deg, #1a1a1a, transparent);
 }
 
 /* Layout Containers */
@@ -26,10 +26,39 @@ section, footer {
 
 /* Hero Section */
 .hero-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    margin-top: 1rem;
+    margin: 2rem 0;
     border-radius: 5%;
+}
+
+.hero-image-container {
+    position: relative;
+    display: flex;
+    justify-content: start;
+}
+
+.hero-image-container::after {
+    content: '';
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        black 10px,
+        black 20px
+    );
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 5%;
+    display: block;
+    width: 80%;
+    height: 343px;
+    z-index: -1;
+}
+
+#name {
+    font-size: 2rem;
 }
 
 .hero-cta-buttons {
