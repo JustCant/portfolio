@@ -1,0 +1,17 @@
+/* Media Queries */
+@media (min-width: 768px) {
+    .about,
+    .projects,
+    .contact {
+        text-align: left;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,10 @@
+/* About Section */
+#about-snippet {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about {
+    text-align: center;
+}

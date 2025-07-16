@@ -1,0 +1,60 @@
+.marquee-wrapper { 
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #f9f9f9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;    
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-left {
+    animation: scrollLoop 20s linear infinite;
+}
+
+.scroll-right {
+    animation: scrollLoopRight 20s linear infinite;
+}
+
+.marquee-content span {
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Seamless scroll using transform */
+@keyframes scrollLoop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollLoopRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}

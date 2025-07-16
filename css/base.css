@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/mont.otf') format('truetype');
+}
+
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mont', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #656565, transparent);
+}
+
+/* Layout Containers */
+section, footer {
+    padding: 1rem;
+    margin: auto;
+}

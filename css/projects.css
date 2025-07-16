@@ -1,0 +1,21 @@
+/* Projects */
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#projects div {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.projects {
+    text-align: center;
+}
