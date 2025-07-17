@@ -2,13 +2,9 @@ function toggleMenu() {
   const menu = document.getElementById('page-heading-menu-btn');
   const links = document.getElementById('page-heading-links');
 
- if (links.style.display === 'block') {
-    links.style.display = 'none';
-    menu.classList.remove('open');
-  } else {
-    links.style.display = 'block';
-    menu.classList.add('open');
-  }
+  links.style.display = 'block';
+  menu.classList.toggle('open');
+  links.classList.toggle('hidden');
 }
 
 document.addEventListener('click', (e) => {
@@ -33,5 +29,5 @@ document.addEventListener('click', (e) => {
   const menu = document.getElementById('page-heading-menu-btn');
 
   menu.classList.remove('open');
-  links.style.display = 'none';
+  links.classList.add('hidden');
 });

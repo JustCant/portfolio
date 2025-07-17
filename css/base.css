@@ -26,3 +26,7 @@ section, footer {
     padding: 1rem;
     margin: auto;
 }
+
+section {
+    margin-bottom: 1.5rem;
+}

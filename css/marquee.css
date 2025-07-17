@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 
 .marquee-content {
@@ -34,10 +35,6 @@
     width: 100%;
     padding: 0 2rem;
     font-size: 2rem;
-}
-
-.hidden {
-    display: none;
 }
 
 /* Seamless scroll using transform */
