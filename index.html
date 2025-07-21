@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>cool cool cool</title>
+        <title>coolcoolcool</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     </head>
@@ -25,28 +25,38 @@
                 <nav>
                     <ul>
                         <li>
-                            <a id="about-nav-item" href="#about-snippet">About</a>
+                            <a href="#about-snippet">About</a>
                         </li>
                         <li>
-                            <a id="projects-nav-item" href="#projects">Projects</a>
+                            <a href="#contact-cta">Contact</a> 
                         </li>
-                        <li>
-                            <a id="contact-nav-item" href="#contact-cta">Contact</a> 
-                        </li>
+                        <!-- To be added in future -->
+                        <!-- <li>
+                            <a href="#projects">Projects</a>
+                        </li> -->
                     </ul>
                 </nav>
             </div>
         </div>
-
         <!--Hero Section-->
         <section id="hero">
             <div class="hero-container">
+                <h1 class="section-header" id="hero-name">Justin Cantley</h1>
+                <p>Software Engineer</p>
                 <div id="hero-image-container">
                     <img id="hero-image" src="assets/images/hero.jpg" alt="picture of Justin holding a delicious treat">
-                </div>
-                <h1 id="hero-name">Justin Cantley</h1>
-                <p>Software Engineer</p>
+                </div>                
+            </div>            
+        </section>
+        <!--About Section-->
+        <section id="about-snippet" class="about">
+            <div id="about">
+                <h2 class="section-header">About</h2>
+                <p>I'm a professional sofware engineer working in the healthcare industry with a specialty in frontend technologies.</p>
+                <p>My toolbox includes Angular, React, Node.js, and PostgreSQL just to name a few.  What really drives me is blending logic with creativity.  I get a kick out of figuring out how things work and finding ways to make them cleaner, faster, or just more enjoyable to use.  For me, learning is the fun part, and building is the reward.</p>
+                <p>When I'm not building, you'll probably find me planning something awesome with my wife and kids.</p>         
             </div>
+            <!-- To be added in future -->
             <!-- <div class="marquee-wrapper">
                 <div class="marquee-content scroll-left">
                     <span class="skills">
@@ -248,15 +258,9 @@
                 </div>
             </div> -->
         </section>
-
-        <!--About Section-->
-        <section id="about-snippet" class="about">
-            <h2>About</h2>
-            <p>I'm a professional sofware engineer working in the healthcare industry with a specialty in frontend technologies.  I get a kick out of figuring out how things work and finding ways to make them cleaner, faster, or just more enjoyable to use.  For me, learning is the fun part, and building is the reward.</p>         
-        </section>
-
+        <!-- To be added in future -->
         <!--Projects Section-->
-        <section id="projects" class="projects">
+        <!-- <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="projects-container">
                 <div class="project-container">
@@ -267,15 +271,29 @@
                     <p>Interactive pixel art creating by using a single div and box-shadow.</p>
                 </div>
             </div>            
-        </section>
+        </section> -->
 
         <!--Contact Section-->
         <section id="contact-cta" class="contact">
-            <h2>Contact</h2>
-            <p>Want to collaborate or just say hi? <a href="contact.html">Get in touch!</a></p>
-            <a href="mailto:justcant1@gmail.com" aria-label="Email Justin Cantley">
-                <img src="assets/icons/email.svg" alt="Email icon" class="email-icon">
-            </a>
+            <h2 class="section-header">Contact</h2>
+            <p>Want to collaborate or just say hi? Get in touch!</p>
+            <div class="container">
+                <form id="contact-form" action="">
+                    <div id="form-control-name" class="form-control">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" maxlength="100" required>
+                    </div>
+                    <div id="form-control-email" class="form-control">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="100" required>
+                    </div>
+                    <div id="form-control-message" class="form-control">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" maxlength="1000" required></textarea>
+                    </div>
+                    <input id="form-submit-btn" type="submit" value="Send"/>
+                </form>
+            </div>
         </section>
 
         <!--Footer section-->
@@ -284,10 +302,10 @@
                 <p>©2025 Justin Cantley. All rights reserved.</p>
 
                 <ul class="footer-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-snippet">About</a></li>
+                    <!-- <li><a href="projects.html">Projects</a></li> -->
+                    <li><a href="#contact-cta">Contact</a></li>
                 </ul>
 
                 <ul class="footer-socials">
@@ -308,12 +326,11 @@
                     </li>
                 </ul>
 
-                <p class="footer-credit">Built with ❤️ using HTML, CSS, & Javascript - from Carnegie, PA</p>
+                <p class="footer-credit">Built with ❤️ using HTML, CSS, & Javascript - from Pittsburgh, PA</p>
                 <a href="#" class="back-to-top" aria-label="Back to top">
                     <span class="back-to-top-arrow">&#8593;</span> Back to top
                 </a>
             </div>
-            <!-- <script src="https://kit.fontawesome.com/8e07e4d016.js" crossorigin="anonymous"></script> -->
             <script src="script.js"></script>
         </footer>
     </body>

@@ -11,9 +11,6 @@ document.addEventListener('click', (e) => {
   const targetId = e.target.id;
   const idsToIgnore = [
     'page-heading-menu-btn', 
-    'about-nav-item', 
-    'projects-nav-item', 
-    'contact-nav-item',
     'page-heading-menu-btn-span-1',
     'page-heading-menu-btn-span-2',
     'page-heading-menu-btn-span-3',

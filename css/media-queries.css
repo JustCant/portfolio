@@ -14,4 +14,49 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    #page-heading-container {
+        grid-area: header;
+    }
+
+    #hero {
+        grid-area: hero;
+    }
+
+    #about-snippet {
+        grid-area: about;
+        height: 100%;
+    }
+
+    #projects {
+        grid-area: projects;
+        width: 100%;
+    }
+
+    #contact-cta {
+        grid-area: contact;
+        width: 100%;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header"
+            "hero about"
+            /* "projects projects" */
+            "contact contact"
+            "footer footer";
+    }
 }
+
+/* @media (min-width: 1000px) {
+    .marquee-wrapper {
+        display: flex;
+    }
+} */

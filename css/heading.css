@@ -5,6 +5,7 @@
 }
 
 #page-heading {
+  max-height: 80px;
   background-color: black;
   display: flex;
   align-items: center;
@@ -42,7 +43,7 @@
         
         &:nth-child(1) { animation-delay: 0.05s; }
         &:nth-child(2) { animation-delay: 0.15s; }
-        &:nth-child(3) { animation-delay: 0.25s; }
+        /* &:nth-child(3) { animation-delay: 0.25s; } */
 
         a {
           display: flex;
@@ -59,12 +60,8 @@
 }
 
 #page-heading-links.hidden nav ul li {
-  animation: hide 0.5s linear forwards;
+  animation: hide 0.15s linear forwards;
   opacity: 1;
-
-  &:nth-child(1) { animation-delay: 0.25s; }
-  &:nth-child(2) { animation-delay: 0.15s; }
-  &:nth-child(3) { animation-delay: 0.05s; }
 }
 
 /* Hamburger Menu */

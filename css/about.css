@@ -8,3 +8,9 @@
 .about {
     text-align: center;
 }
+
+#about {
+    p:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
